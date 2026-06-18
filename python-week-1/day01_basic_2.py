@@ -68,3 +68,12 @@ for user in users:
 
     if is_adult_user(user):
         print(user)
+
+print("===")
+with open("message.txt", "r", encoding="utf-8") as file:
+    content = file.read()
+print(content)
+
+print("===")
+with open("output.txt", "w", encoding="utf-8") as file:
+    file.write("Hello porter greeting")
